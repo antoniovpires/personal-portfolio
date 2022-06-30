@@ -90,8 +90,7 @@ header h5 {
     background-color: var(--black) ;
     width: 100%;
     padding: 6rem 0rem;
-    padding-bottom: 8rem;
-    border-radius: 0% 0% 40% 40%;
+    padding-bottom: 0rem;
 }
 
 .skillsLeftColumn {
@@ -147,7 +146,7 @@ header h5 {
     text-align: justify;
     justify-content: center;
     margin: auto;
-    margin-top: 1rem;
+    margin-top: 2rem;
     padding-top: 0px;
     padding-left: 10px;
     color: black;
@@ -169,7 +168,7 @@ header h5 {
 
 .carouselBtn {
     width: 5%;
-    transition: 1s;
+    transition: 1s
 }
 
 .carousel-control-prev {
@@ -192,11 +191,27 @@ header h5 {
 
 /* MEDIA AND MORE ABOUT ME */
 
+.black-part {
+    background-color: var(--black);
+    height: 10rem;
+}
+
+.white-part {
+    background-color: whitesmoke;
+    height: 8rem;
+    border-radius: 0% 0% 100% 100%;
+}
+
+.white-part1 {
+    background-color: var(--black);
+    height: 8rem;
+    border-radius: 0% 0% 100% 100%;
+}
+
 .media-and-more {
     background-color: var(--black);
     width: 100%;
-    padding-top: 5rem;
-    border-top: 2rem dashed whitesmoke;
+    padding-top: 1rem;
 }
 
 .media-icons-div {
@@ -213,7 +228,7 @@ header h5 {
 
 .media-icons i:hover {
     font-size: 4rem;
-    color: rgb(206, 206, 206);
+    color: #007bff;
     margin: 1rem;
     transition: 0.5s;
 }
@@ -230,6 +245,10 @@ header h5 {
     right: 1%;
     text-decoration: none;
     font-size: 2.5rem;
+}
+
+.gotopbtn i {
+    color: #007bff;
 }
 
 .gotopbtn:hover {

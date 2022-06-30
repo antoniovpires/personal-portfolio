@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&display=swap');
+
+:root {
+    --black: rgb(7,7,7);
+}
+
+* {
+    font-family: 'Raleway', sans-serif;
+    color: white;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: whitesmoke;
+}
+
+.flex-container {
+    display: flex;
+    width: 80%;
+    margin: auto;
+}
+
+header {
+    display: flex;
+    margin: auto;
+    background-color: var(--black);
+    padding-bottom: 1rem;
+}
+
+
+header h5 {
+    color: white;
+    width: 100%;
+    font-size: 1.5rem;
+    margin-left: 2rem;
+    margin-top: 2rem;
+}
+
+.languages-division {
+    width: 100%;
+    text-align: right;
+    justify-content: right;
+    margin-right: 2.5rem;
+}
+
+.languages-division a {
+    font-size: 2rem;
+    margin-left: 1rem;
+    margin-top: 1.5rem;
+}
+
+footer {
+    margin-top: 32rem;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    height: 100%;
+    background-color: var(--black);
+}
+
+footer p {
+    text-align: center;
+    margin: auto;
+}
+
+/* CONTACT PAGE */
+
+.contact-text {
+    color: var(--black);
+    text-align: center;
+    justify-content: center;
+    width: 60%;
+    margin: auto;
+    margin-top: 8rem;
+}

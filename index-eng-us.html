@@ -11,9 +11,14 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <link rel="stylesheet" href="css/styles.css">
 </head>
-<body>
+<body class="preload">
+    <div class="pulse-loader">
+        <div class="pulse-loader-1"></div>
+        <div class="pulse-loader-2"></div>
+    </div>
     <header>
         <h5>Antônio V. Pires</h5>
         <div class="languages-division flex-container">
@@ -21,59 +26,20 @@
             <a href="index.html">&#127463;&#127479;</a>
         </div>
     </header>
-    <div class="flex-container devDiv">
-        <img src="images/IMG-20220321-WA0011.jpg" alt="" id="devPicture">
-        <p class="devDescript">
-            Hi 👋 How are you doing? My name is <b>Antônio</b>, I am a 23yo Brazilian &#127463;&#127479;, and I am looking for my first opportunity as a developer! Working with technology, creativity and innovation were very important factors that made me choose developing as a career. But the one that really caught my attention was the possibility to make a difference on other people's lives. 
-        <br>
-        <br>  
-            Here you are going to find a summary of my skills, some projects I have developed (Some I had help from bootcamp mentors) and at the end of the page there are more information about me and also links to my social medias.
-            Besides that, as soon as you decide to get in touch with me, just hit the email button on the bottom right corner of the page! (On the left side of the "scroll-top" button)
-        </p>
+    <div class="col-md-12 flex-container devDiv">
+        <div class="col-md-6 divDevPicture">
+            <img src="images/canvas.png" id="devPicture" alt="Minha foto de perfil">
+        </div>
+        <div class="col-md-6 devDescript">
+            <p>Hi 👋 How are you doing? My name is <b>Antônio</b>, I am a 23yo Brazilian &#127463;&#127479;, and I am looking for my first opportunity as a developer! Working with technology, creativity and innovation were very important factors that made me choose developing as a career. But the one that really caught my attention was the possibility to make a difference on other people's lives!
+            <br>
+            <br>
+            Here you are going to find a summary of my skills, some projects I have developed (Some I had help from bootcamp mentors) and diplomas I've conquered so far! And, as soon as you decide to get in touch with me, right at the end of the page there are links to my social medias, email and whatsapp! There's also more information about me.
+            </p>
+        </div>
     </div>
     <div class="flex-container skillsDiv">
-        <div class="col-md-6">   
-            <table class="table">
-                <thead>
-                    <tr>
-                    <th scope="col" colspan="6" class=" tableTitle">Habilidades</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                    <th scope="row" class="skillHeader">Criatividade</th>
-                    <td class="starLevel"><i class="fa-solid fa-star"></i></td>
-                    <td class="starLevel"><i class="fa-solid fa-star"></i></td>
-                    <td class="starLevel"><i class="fa-solid fa-star"></i></td>
-                    <td class="starLevel"><i class="fa-solid fa-star"></i></td>
-                    <td class="starLevel"><i class="fa-solid fa-star"></i></td>
-                    </tr>
-                    <tr>
-                    <th scope="row" class="skillHeader">Comunicação</th>
-                    <td class="starLevel"><i class="fa-solid fa-star"></i></td>
-                    <td class="starLevel"><i class="fa-solid fa-star"></i></td>
-                    <td class="starLevel"><i class="fa-solid fa-star"></i></td>
-                    <td class="starLevel"><i class="fa-solid fa-star"></i></td>
-                    </tr>
-                    <th scope="row" class="skillHeader">Dedicação</th>
-                    <td class="starLevel"><i class="fa-solid fa-star"></i></td>
-                    <td class="starLevel"><i class="fa-solid fa-star"></i></td>
-                    <td class="starLevel"><i class="fa-solid fa-star"></i></td>
-                    <td class="starLevel"><i class="fa-solid fa-star"></i></td>
-                    <td class="starLevel"><i class="fa-solid fa-star"></i></td>
-                    </tr>
-                    <tr>
-                    <th scope="row" class="skillHeader">Idiomas</th>
-                    <td class="starLevel"><i class="fa-solid fa-star"></i></td>
-                    <td class="starLevel"><i class="fa-solid fa-star"></i></td>
-                    <td class="starLevel"><i class="fa-solid fa-star"></i></td>
-                    <td class="starLevel"><i class="fa-solid fa-star"></i></td>
-                    </tr>
-                    <tr>
-                </tbody>
-            </table>
-        </div>
-        <div class="col-md-3">
+        <div class="col-md-6 skillsLeftColumn">
             <div class="progress">
                 <div class="progress-bar progress-bar-striped progress-bar-animated w-100" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"><b>HTML5 / CSS3</b></div>
             </div>
@@ -95,7 +61,7 @@
             </div>
         </div>
         <!--/////////////////////////////////////////////////////-->
-        <div class="col-md-3">
+        <div class="col-md-6 skillsRightColumn">
             <div class="progress">
                 <div class="progress-bar progress-bar-striped progress-bar-animated w-50" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"><b>ReactJS</b></div>
             </div>
@@ -118,73 +84,103 @@
         </div>
     </div>
     <a class="gotopbtn" href="#"><i class="fa-solid fa-circle-arrow-up"></i></a>
-    <a class="emailbtn" href="contact-me-eng-us.html" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+    <a class="emailbtn" href="contact-me-br.html" target="_blank"><i class="fa-solid fa-envelope"></i></a>
 
     <!-- //////////////////////////PROJETOS DESENVOLVIDOS//////////////////////////-->
-    <div class="flex-container projects-carousel">
-        <div class="col-md-12">
-            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="false">
-                <ol class="carousel-indicators">
-                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                </ol>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img class="d-block w-100" src="images/gelo_gif.gif" alt="First slide">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>eBook - Landing Page</h5>
-                            <p>
-                                I've developed this project with the objective of practicing my CSS and improve my design skills.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img class="d-block w-100" src="images/blog_gif.gif" alt="Second slide">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Blog w/ Data Base</h5>
-                            <p>
-                                I've developed this project with Dra. Angela Yu's help during her Bootcamp. The website uses EJS, ExpressJS, MongoDB, Mongoose and NodeJS. It was a great experience bringing all the back-end to life from scratch. 
-                            </p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img class="d-block w-100" src="images/todo_gif.gif" alt="Third slide">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>To Do list w/ Data Base</h5>
-                            <p>
-                                Also during Dra. Angela Yu's Bootcamp, I've developed this list using the same stack as the previous one. I liked the result, although I believe the world needs no more "to do" lists.
+    <div class="carouselBigDiv">
+        <div class="flex-container projects-carousel-div">
+            <div class="col-md-12">
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="false">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="d-block w-100 col-md-6" src="/images/cadastro.gif" alt="First slide">
+                            <div class="carousel-caption d-none d-md-block col-md-6">
+                                <h5><b style="color: black">API w/ MySQL Database</b></h5>
+                                <p>
+                                    This is a test I've developed during an application for a Back-end positioN! This was the most complex I've developed until now and I'm very proud of how it came out. I learned how to use ORMs, specially Prisma. I intend to develop more features for the app in the future. More information avaiable in my <a href="https://github.com/antoniovpires/EVA-Test-LAB"> Github Repository!</a>
                                 </p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="/images/blog_gif.gif" alt="Second slide">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5><b style="color: black">Blog w/ Data Base</b></h5>
+                                <p>I've developed this project with Dra. Angela Yu's help during her Bootcamp. The website uses EJS, ExpressJS, MongoDB, Mongoose and NodeJS. It was a great experience bringing all the back-end to life from scratch. </p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="/images/todo_gif.gif" alt="Third slide">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5><b style="color: black">To Do list w/ Data Base</b></h5>
+                                <p>Also during Dra. Angela Yu's Bootcamp, I've developed this list using the same stack as the previous one. I liked the result, although I believe the world needs no more "to do" lists.</p>
+                            </div>
                         </div>
                     </div>
+                    <a class="carousel-control-prev carouselBtn" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next carouselBtn" href="#carouselExampleIndicators" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
                 </div>
-                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
+            </div>
+        </div>
+        <!-- //////////////////////////DIPLOMAS RECEBIDOS//////////////////////////-->
+        <div class="flex-container projects-carousel-div">
+            <div class="col-md-12">
+                <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel" data-interval="false">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active carousel-item-bottom">
+                            <div class="carousel-caption d-none d-md-block col-md-6 diploma-caption">
+                                <h5><b style="color: black">Web Development Bootcamp</b></h5>
+                                <p>
+                                The best course I've taken so far! It teaches it all, from the basics to harder topics, such as NoSQL Databases, React and Web3. There are a couple of introduction modules to blockchain technology and also some exercises around encryption. There are exercises in ALL the modules to promote a deeper understandment of the topics. Some of which I've posted in this portfolio. I am sure this course was a great introduction and it is just the beginning!</p>
+                            </div>
+                            <img class="d-block w-100 col-md-6" src="/images/Udemy.jpg" alt="First slide">
+                        </div>
+                        <div class="carousel-item carousel-item-bottom">
+                            <div class="carousel-caption d-none d-md-block diploma-caption">
+                                <h5><b style="color: black">Free Code Camp - Responsive Web Design</b></h5>
+                                <p>
+                                    This course is a good option to become familiar with Web Development concepts. I like to compare FCC to Duolingo. It is a repetitive exercise that aims to create a sort of muscular memory. However, I believe that complementing this knowledge through small exercises or even other courses is necessary in order to really learn it. Despite it's characteristics, it is a good plataform to learn new technologies with a very intuitive interface! And it is free!!</p>
+                            </div>
+                            <img class="d-block w-100" src="/images/FCC first.png" alt="Second slide">
+                        </div>
+                        <div class="carousel-item carousel-item-bottom">
+                            <div class="carousel-caption d-none d-md-block diploma-caption">
+                                <h5><b style="color: black">Introduction to Git</b></h5>
+                                <p>
+                                    Simple, introductory and well summarized course. I wish some classes were better, but the objetive of showing this diploma here is nothing to do with this course in particular. I believe that Git is a technology that is, sometimes, ignored by students. I want to show that I'm really into studying programming, not only it's languages but also relevant technologies and concepts that surround all the development process!</p>
+                            </div>
+                            <img class="d-block w-100" src="/images/Git.PNG" alt="Third slide">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev carouselBtn" href="#carouselExampleIndicators2" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next carouselBtn" href="#carouselExampleIndicators2" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
             </div>
         </div>
     </div>
-
-
     <!-- //////////////////////////MÍDIAS SOCIAIS E MAIS SOBRE MIM//////////////////////////-->
     
-    <div class="flex-container">
+    <div class="flex-container media-and-more">
         <div class="col-md-6 media-icons-div">
             <a href="https://github.com/antoniovpires" target="_blank" class="media-icons"><i class="fa-brands fa-github"></i></a>
             <a href="https://www.linkedin.com/in/antoniovpires/" target="_blank" class="media-icons"><i class="fa-brands fa-linkedin-in"></i></a>
-            <a href="https://www.instagram.com/antoniovpires/" target="_blank" class="media-icons"><i class="fa-brands fa-instagram"></i></a>
+            <a href="contact-me-eng-us.html" target="_blank" class="media-icons"><i class="fa-solid fa-envelope"></i></a>
             <a href="https://wa.me/+5548999940355" target="_blank" class="media-icons"><i class="fa-brands fa-whatsapp"></i></a>
         </div>
-        <div class="col-md-6">
-            <h2>+ About Me</h2>
-            <p class="moreAboutMe">
-            
-            I have always been a very curious person, and I like to study about the most diverse subjects 🧐. I am a selftaught programmer, and also a bachelor in International Relations 🌎!
+        <div class="col-md-6 colMoreAbout">
+            <h2>+ About me</h2>
+            <p class="moreAboutMe">I have always been a very curious person, and I like to study about the most diverse subjects 🧐. I am a selftaught programmer, and also a bachelor in International Relations 🌎!
                 
             I want to use my creativity to develop my own innovations 💡. And to reach that, I know that I must improve my skills constantly and also share my knowledge with other people 🤝!
                 
@@ -192,6 +188,12 @@
         </p>
         </div>
     </div>
+    <script>
+        setTimeout(function(){
+            $("body").removeClass("preload");
+            $(".pulse-loader").fadeOut("2400", "swing");;
+        }, 1000);  
+    </script>
     <footer>
         <p>Developed by Antônio V. Pires</p>
     </footer>
