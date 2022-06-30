@@ -11,9 +11,14 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <link rel="stylesheet" href="css/styles.css">
 </head>
-<body>
+<body class="preload">
+    <div class="pulse-loader">
+        <div class="pulse-loader-1"></div>
+        <div class="pulse-loader-2"></div>
+    </div>
     <header>
         <h5>Antônio V. Pires</h5>
         <div class="languages-division flex-container">
@@ -172,7 +177,7 @@
             <a href="https://www.instagram.com/antoniovpires/" target="_blank" class="media-icons"><i class="fa-brands fa-instagram"></i></a>
             <a href="https://wa.me/+5548999940355" target="_blank" class="media-icons"><i class="fa-brands fa-whatsapp"></i></a>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-6 colMoreAbout">
             <h2>+ Sobre Mim</h2>
             <p class="moreAboutMe">Sempre fui uma pessoa muito curiosa, e costumo estudar sobre os mais diversos assuntos 🧐. Sou um programador autodidata, e também um bacharel em Relações Internacionais 🌎!
                 
@@ -182,6 +187,12 @@
         </p>
         </div>
     </div>
+    <script>
+        setTimeout(function(){
+            $("body").removeClass("preload");
+            $(".pulse-loader").fadeOut("2400", "swing");;
+        }, 1000);  
+    </script>
     <footer>
         <p>Developed by Antônio V. Pires</p>
     </footer>

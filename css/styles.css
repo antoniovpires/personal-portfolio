@@ -90,7 +90,8 @@ header h5 {
     background-color: var(--black) ;
     width: 100%;
     padding: 6rem 0rem;
-    border-bottom: 2rem dashed whitesmoke;
+    padding-bottom: 8rem;
+    border-radius: 0% 0% 40% 40%;
 }
 
 .skillsLeftColumn {
@@ -122,8 +123,8 @@ header h5 {
 /* CAROUSEL */
 
 .projects-carousel-div {
-    margin-top: 10rem;
-    margin-bottom: 10rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
     padding: 3rem 1.5rem;
     width: 100%;
 }
@@ -146,7 +147,7 @@ header h5 {
     text-align: justify;
     justify-content: center;
     margin: auto;
-    margin-top: 0rem;
+    margin-top: 1rem;
     padding-top: 0px;
     padding-left: 10px;
     color: black;
@@ -172,22 +173,24 @@ header h5 {
 }
 
 .carousel-control-prev {
-    background-image: linear-gradient(to left, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.05));
+    background-image: linear-gradient(to left, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.2));
     border-radius: 50px 0px 0px 50px;
 }
 
 .carousel-control-next {
-    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.05));
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.2));
     border-radius: 0px 50px 50px 0px;
 }
 
 .carousel-control-prev:hover {
-    background-image: linear-gradient(to left, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.15));
+    background-image: linear-gradient(to left, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.3));
 }
 
 .carousel-control-next:hover {
-    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.15));
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.3));
 }
+
+/* MEDIA AND MORE ABOUT ME */
 
 .media-and-more {
     background-color: var(--black);
@@ -217,7 +220,7 @@ header h5 {
 
 .moreAboutMe {
     text-align: justify;
-    background-color: var(--black);
+    width: 80%;
 }
 
 .gotopbtn {
@@ -254,4 +257,131 @@ footer p {
     width: 60%;
     margin: auto;
     margin-top: 8rem;
+}
+
+
+/* PRE-LOADER */
+
+.preload {
+    overflow: hidden;
+}
+  
+.pulse-loader .pulse-loader-1,
+.pulse-loader .pulse-loader-2 {
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+    max-width: 60rem;
+    margin: auto;
+}
+
+.pulse-loader {
+    background-color: var(--black);
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pulse-loader>div {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-width: 20px;
+    border-style: solid;
+    border-color: #fff;
+}
+
+.pulse-loader .pulse-loader-1 {
+    -webkit-animation: pulse1 2s .10s ease infinite;
+    -moz-animation: pulse1 2s .10s ease infinite;
+    -ms-animation: pulse1 2s .10s ease infinite;
+    -o-animation: pulse1 2s .10s ease infinite;
+    animation: pulse1 2s .10s ease infinite
+}
+
+.pulse-loader .pulse-loader-2 {
+    -webkit-animation: pulse1 4s ease infinite;
+    -moz-animation: pulse1 4s ease infinite;
+    -ms-animation: pulse1 4s ease infinite;
+    -o-animation: pulse1 4s ease infinite;
+    animation: pulse1 4s ease infinite
+}
+
+@-webkit-keyframes pulse1 {
+    0% {
+        -webkit-transform: scale(0)
+    }
+    40% {
+        -webkit-transform: scale(0.1);
+        opacity: 1
+    }
+    100% {
+        -webkit-transform: scale(0.5);
+        opacity: 0
+    }
+}
+
+@-moz-keyframes pulse1 {
+    0% {
+        -moz-transform: scale(0)
+    }
+    40% {
+        -moz-transform: scale(0.1);
+        opacity: 1
+    }
+    100% {
+        -moz-transform: scale(0.5);
+        opacity: 0
+    }
+}
+
+@-o-keyframes pulse1 {
+    0% {
+        -o-transform: scale(0)
+    }
+    40% {
+        -o-transform: scale(0.1);
+        opacity: 1
+    }
+    100% {
+        -o-transform: scale(0.5);
+        opacity: 0
+    }
+}
+
+@-ms-keyframes pulse1 {
+    0% {
+        -ms-transform: scale(0)
+    }
+    40% {
+        -ms-transform: scale(0.1);
+        opacity: 1
+    }
+    100% {
+        -ms-transform: scale(0.5);
+        opacity: 0
+    }
+}
+
+@keyframes pulse1 {
+    0% {
+        transform: scale(0)
+    }
+    40% {
+        transform: scale(0.1);
+        opacity: 1
+    }
+    100% {
+        transform: scale(0.5);
+        opacity: 0
+    }
 }
