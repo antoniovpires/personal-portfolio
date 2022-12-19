@@ -1,5 +1,6 @@
 {
   "name": "my-portfolio",
+  "homepage": "https://antoniovpires.github.io/personal-portfolio/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -40,7 +41,5 @@
   },
   "devDependencies": {
     "gh-pages": "^4.0.0"
-  },
-  "homepage": 
-    "https://antoniovpires.github.io/personal-portfolio/"
+  }
 }
