@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&display=swap');
+
+:root {
+    --color1: #2C3639;
+    --color2: #3F4E4F;
+    --color3: #A27B5C;
+    --color4: #DCD7C9;
+    --white: rgb(210,210,215);
+}
+
+* {
+    font-family: 'Raleway', sans-serif;
+    color: white;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+main {
+    display: grid;
+    grid: auto / 22% auto;
+    width: 100vw;
+    height: 100vh;
+}
+
+#profileBar {
+    background-color: var(--color1);
+    text-align: center;
+}
+
+#profileBar #profilePicture {
+    margin-top: 30px;
+}
+
+#profileTitle, #profileSubtitle, #profileDescription {
+    color: white;
+}
+
+#profileTitle {
+    margin-top: 20px;
+}
+
+#profileSubtitle {
+    margin-top: -5px;
+}
+
+#profileDescription {
+    margin-top: 20px;
+}
+
+#projectsView {
+    background-color: whitesmoke;
+    overflow-y: scroll;
+}
+
+#mediaLinks {
+    display: flex;
+    justify-content: space-between;
+    width: 15%;
+    margin: auto;
+    position: absolute;
+    bottom: 3%;
+    left: 3.5%;
+}
+
+#mediaLinks i {
+    font-size: 2rem;
+    color: white;
+}
+
+.aboutDiv {
+    width: 90%;
+    margin: auto;
+    margin-top: 50px;
+    color: var(--color2)
+}
+
+.aboutDiv h2 {
+    text-align: right;
+}
+
+.aboutDiv p {
+    text-align: justify;
+    color: var(--color1)
+}
+
+.aboutDiv b {
+  color: var(--color1)
+}
+
+.projectDiv {
+    margin-top: 50px;
+    height: 30%;
+}
+
+.project1 {
+    background: url(./project-pictures/blog_gif.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.project2 {
+    background: url(./project-pictures/cadastro.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.project2 h2 {
+    text-align: right;
+}
+
+.project3 {
+    background: url(./project-pictures/gelo_gif.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.projectDescription {
+    padding: 40px;
+    background-color: var(--color2);
+    opacity: 0.2;
+    height: 100%;
+    text-align: justify;
+}
+
+.projectDiv:hover 
+.projectDescription {
+    opacity: 1;
+    transition: 0.2s;
+}
+
+#footer {
+    text-align: center;
+    color: var(--color1);
+    opacity: 0.3;
+    margin-top: 100px;
+    margin-bottom: 30px;
+}
+
+/* MODELOS ANIMAÇÃO */
+
+.reveal {
+    position: relative;
+    opacity: 0;
+  }
+  .reveal.active {
+    opacity: 1;
+  }
+  .active.fade-bottom {
+    animation: fade-bottom 1s ease-in;
+  }
+  .active.fade-left {
+    animation: fade-left 1s ease-in;
+  }
+  .active.fade-right {
+    animation: fade-right 1s ease-in;
+  }
+
+  @keyframes fade-bottom {
+    0% {
+      transform: translateY(50px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  @keyframes fade-left {
+    0% {
+      transform: translateX(-100px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  @keyframes fade-right {
+    0% {
+      transform: translateX(100px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+#divideLine {
+    height: 3px;
+    width: 20%;
+    background-color: rgba(255, 255, 255, 0.1);
+    position: absolute;
+    bottom: 10%;
+    left: 1%;
+}
