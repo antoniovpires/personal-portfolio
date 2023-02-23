@@ -1,18 +1,22 @@
 {
   "files": {
-    "main.css": "/personal-portfolio/static/css/main.33c54867.css",
-    "main.js": "/personal-portfolio/static/js/main.f17670f4.js",
+    "main.css": "/personal-portfolio/static/css/main.614c66c0.css",
+    "main.js": "/personal-portfolio/static/js/main.6f85ac20.js",
     "static/js/787.128fc6e9.chunk.js": "/personal-portfolio/static/js/787.128fc6e9.chunk.js",
     "static/media/gelo_gif.gif": "/personal-portfolio/static/media/gelo_gif.5507cb6c88d58486b0aa.gif",
+    "static/media/knn-logo-1.png": "/personal-portfolio/static/media/knn-logo-1.c57febf4e7d0ee15f396.png",
     "static/media/blog_gif.gif": "/personal-portfolio/static/media/blog_gif.2ca8e7734cd48a960d7d.gif",
     "static/media/cadastro.gif": "/personal-portfolio/static/media/cadastro.7e2e842e720c0758e59a.gif",
+    "static/media/Banzai_LOGO-removebg-preview.png": "/personal-portfolio/static/media/Banzai_LOGO-removebg-preview.0f42237e08051ae0c5d4.png",
+    "static/media/logo2.png": "/personal-portfolio/static/media/logo2.e36bb01a6cdccd2a0d85.png",
+    "static/media/LogoCompasso-positivo.png": "/personal-portfolio/static/media/LogoCompasso-positivo.04ecd939b8f5e1009413.png",
     "index.html": "/personal-portfolio/index.html",
-    "main.33c54867.css.map": "/personal-portfolio/static/css/main.33c54867.css.map",
-    "main.f17670f4.js.map": "/personal-portfolio/static/js/main.f17670f4.js.map",
+    "main.614c66c0.css.map": "/personal-portfolio/static/css/main.614c66c0.css.map",
+    "main.6f85ac20.js.map": "/personal-portfolio/static/js/main.6f85ac20.js.map",
     "787.128fc6e9.chunk.js.map": "/personal-portfolio/static/js/787.128fc6e9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.33c54867.css",
-    "static/js/main.f17670f4.js"
+    "static/css/main.614c66c0.css",
+    "static/js/main.6f85ac20.js"
   ]
 }
