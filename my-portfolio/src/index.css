@@ -1,20 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&display=swap");
 
 :root {
-    --color1: #2C3639;
-    --color2: #3F4E4F;
-    --color3: #A27B5C;
-    --color4: #DCD7C9;
-    --white: rgb(210,210,215);
-    --highlight: #97BAC4;
+  --color1: #2c3639;
+  --color2: #3f4e4f;
+  --color3: #a27b5c;
+  --color4: #dcd7c9;
+  --white: rgb(210, 210, 215);
+  --highlight: #97bac4;
 }
 
 * {
-    font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 .highlight {
@@ -22,43 +22,47 @@ html {
 }
 
 aside {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: var(--color1);
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100vh;
-    max-width: 20%;
-    border-right: 5px solid var(--color2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--color1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  max-width: 20%;
+  border-right: 5px solid var(--color2);
 }
 
 aside #profilePicture {
-    margin-top: 30px;
-    border-radius: 100%;
-    max-width: 50%;
+  margin-top: 30px;
+  border-radius: 100%;
+  max-width: 50%;
 }
 
-#profileTitle, #profileSubtitle, #profileDescription, .contactInfo {
-    color: white;
+#profileTitle,
+#profileSubtitle,
+#profileDescription,
+.contactInfo {
+  color: white;
 }
 
 #profileTitle {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 #profileSubtitle {
-    margin-top: -5px;
+  margin-top: -5px;
 }
 
-#profileDescription, .contactInfo {
-    margin-top: 20px;
-    width: 80%;
-    text-align: center;
+#profileDescription,
+.contactInfo {
+  margin-top: 20px;
+  width: 80%;
+  text-align: center;
 }
 
-.contactInfo{
+.contactInfo {
   display: flex;
   align-items: center;
   gap: 10px;
@@ -70,14 +74,14 @@ aside #profilePicture {
   color: white;
 }
 
-.contactInfo a:hover{
+.contactInfo a:hover {
   color: var(--highlight) !important;
 }
 
 main {
-    background-color: whitesmoke;
-    overflow-y: auto;
-    margin-left: 20%;
+  background-color: whitesmoke;
+  overflow-y: auto;
+  margin-left: 20%;
 }
 
 swiper-slide {
@@ -102,44 +106,45 @@ swiper-slide img:hover {
 }
 
 #mediaLinks {
-    display: flex;
-    justify-content: space-between;
-    width: 80%;
-    padding: 20px 0px;
-    border-bottom: 2px solid var(--color2);
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  padding: 20px 0px;
+  border-bottom: 2px solid var(--color2);
 }
 
 #mediaLinks i {
-    font-size: 2rem;
-    color: white;
+  font-size: 2rem;
+  color: white;
 }
 
 #mediaLinks a:hover i {
   color: var(--highlight) !important;
 }
 
-.aboutDiv, .companiesDiv {
-    width: 90%;
-    margin: auto;
-    margin-top: 50px;
-    color: var(--color2)
+.aboutDiv,
+.companiesDiv {
+  width: 90%;
+  margin: auto;
+  margin-top: 50px;
+  color: var(--color2);
 }
 
 .aboutDiv h2 {
-    text-align: left;
+  text-align: left;
 }
 
 .aboutDiv p {
-    text-align: justify;
-    color: var(--color1)
+  text-align: justify;
+  color: var(--color1);
 }
 
 .aboutDiv b {
-  color: var(--color1)
+  color: var(--color1);
 }
 
 .aboutDiv label {
-  color: var(--color1)
+  color: var(--color1);
 }
 
 .companiesDiv {
@@ -147,103 +152,102 @@ swiper-slide img:hover {
 }
 
 .projectDiv {
-    margin-top: 50px;
-    height: 30%;
-    color: white;
+  margin-top: 50px;
+  height: 30%;
+  color: white;
 }
 
 .project1 {
-    background: url(./project-pictures/blog_gif.gif);
-    background-repeat: no-repeat;
-    background-size: cover;
+  background: url(./project-pictures/blog_gif.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .project2 {
-    background: url(./project-pictures/cadastro.gif);
-    background-repeat: no-repeat;
-    background-size: cover;
+  background: url(./project-pictures/cadastro.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .project2 h2 {
-    text-align: right;
+  text-align: right;
 }
 
 .project3 {
-    background: url(./project-pictures/gelo_gif.gif);
-    background-repeat: no-repeat;
-    background-size: cover;
+  background: url(./project-pictures/gelo_gif.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .projectDescription {
-    padding: 40px;
-    background-color: var(--color2);
-    opacity: 0.2;
-    height: 100%;
-    text-align: justify;
+  padding: 40px;
+  background-color: var(--color2);
+  opacity: 0.2;
+  height: 100%;
+  text-align: justify;
 }
 
-.projectDiv:hover 
-.projectDescription {
-    opacity: 1;
-    transition: 0.2s;
+.projectDiv:hover .projectDescription {
+  opacity: 1;
+  transition: 0.2s;
 }
 
 footer {
-    text-align: center;
-    color: var(--color1);
-    opacity: 0.3;
-    margin-top: 100px;
-    margin-bottom: 30px;
+  text-align: center;
+  color: var(--color1);
+  opacity: 0.3;
+  margin-top: 100px;
+  margin-bottom: 30px;
 }
 
 /* MODELOS ANIMAÇÃO */
 
 .reveal {
-    position: relative;
+  position: relative;
+  opacity: 0;
+}
+.reveal.active {
+  opacity: 1;
+}
+.active.fade-bottom {
+  animation: fade-bottom 1s ease-in;
+}
+.active.fade-left {
+  animation: fade-left 1s ease-in;
+}
+.active.fade-right {
+  animation: fade-right 1s ease-in;
+}
+
+@keyframes fade-bottom {
+  0% {
+    transform: translateY(50px);
     opacity: 0;
   }
-  .reveal.active {
+  100% {
+    transform: translateY(0);
     opacity: 1;
   }
-  .active.fade-bottom {
-    animation: fade-bottom 1s ease-in;
+}
+@keyframes fade-left {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
   }
-  .active.fade-left {
-    animation: fade-left 1s ease-in;
+  100% {
+    transform: translateX(0);
+    opacity: 1;
   }
-  .active.fade-right {
-    animation: fade-right 1s ease-in;
+}
+@keyframes fade-right {
+  0% {
+    transform: translateX(100px);
+    opacity: 0;
   }
-
-  @keyframes fade-bottom {
-    0% {
-      transform: translateY(50px);
-      opacity: 0;
-    }
-    100% {
-      transform: translateY(0);
-      opacity: 1;
-    }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
   }
-  @keyframes fade-left {
-    0% {
-      transform: translateX(-100px);
-      opacity: 0;
-    }
-    100% {
-      transform: translateX(0);
-      opacity: 1;
-    }
-  }
-  @keyframes fade-right {
-    0% {
-      transform: translateX(100px);
-      opacity: 0;
-    }
-    100% {
-      transform: translateX(0);
-      opacity: 1;
-    }
-  }
+}
 
 /* SKILLS */
 
@@ -265,4 +269,18 @@ footer {
   display: flex;
   gap: 5px;
   font-size: 45px;
+}
+
+#lngButton-eng {
+  width: 60%;
+  font-size: 25px;
+  background-color: transparent;
+  border: 2px solid var(--color2);
+  border-radius: 10px;
+  position: absolute;
+  bottom: 10px;
+}
+
+#lngButton-eng:hover {
+  background-color: #272f31;
 }
