@@ -17,7 +17,7 @@ function ProjectDescription(props) {
 
         div {
         padding: 40px;
-        background-color: var(--gradient1);
+        background-color: var(--black);
         opacity: 0.2;
         height: 100%;
         text-align: justify;
@@ -29,8 +29,8 @@ function ProjectDescription(props) {
         }` 
 
     return (
-        <ProjectSection>
-            <a href="https://antoniovpires.github.io/insta_help/" target="_blank" rel="noreferrer">
+        <ProjectSection className="projectSection">
+            <a href={props.link} target="_blank" rel="noreferrer">
                 <div>
                     <h2>{props.title}</h2>
                     <p>{props.text}</p>

@@ -6,10 +6,12 @@ function SwiperProject(props) {
     return (
         <swiper-container className="swiper-container">
             <swiper-slide>
-                <img alt={alts[0]} data-bs-toggle="popover" data-bs-trigger="hover focus" title="Onix" data-bs-content={descriptions[0]} data-bs-placement="bottom" src={require('./project-pictures/logo2.png')}></img>
-                <img alt={alts[1]} data-bs-toggle="popover" data-bs-trigger="hover focus" title="Compasso.UOL" data-bs-content={descriptions[1]} data-bs-placement="bottom" src={require('./project-pictures/LogoCompasso-positivo.png')}></img>
-                <img alt={alts[2]} data-bs-toggle="popover" data-bs-trigger="hover focus" title="KNN Idiomas" data-bs-content={descriptions[2]} data-bs-placement="bottom" style={{ width: "45%" }} src={require('./project-pictures/knn-logo-1.png')}></img>
-                <img alt={alts[3]} data-bs-toggle="popover" data-bs-trigger="hover focus" title="Banzai Store" data-bs-content={descriptions[3]} data-bs-placement="bottom" style={{ width: "45%" }} src={require('./project-pictures/Banzai_LOGO-removebg-preview.png')}></img>
+                <div>
+                <img alt={alts[0]} data-bs-toggle="popover" data-bs-trigger="hover focus" title="Onix" data-bs-content={descriptions[0]} data-bs-placement="bottom" src={require('../project-pictures/logo2.png')}></img>
+                </div>
+                <img alt={alts[1]} data-bs-toggle="popover" data-bs-trigger="hover focus" title="Compasso.UOL" data-bs-content={descriptions[1]} data-bs-placement="bottom" src={require('../project-pictures/LogoCompasso-positivo.png')}></img>
+                <img alt={alts[2]} data-bs-toggle="popover" data-bs-trigger="hover focus" title="KNN Idiomas" data-bs-content={descriptions[2]} data-bs-placement="bottom" style={{ width: "45%" }} src={require('../project-pictures/knn-logo-1.png')}></img>
+                <img alt={alts[3]} data-bs-toggle="popover" data-bs-trigger="hover focus" title="Banzai Store" data-bs-content={descriptions[3]} data-bs-placement="bottom" style={{ width: "45%" }} src={require('../project-pictures/Banzai_LOGO-removebg-preview.png')}></img>
             </swiper-slide>
         </swiper-container>
     )

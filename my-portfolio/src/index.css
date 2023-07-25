@@ -1,17 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&display=swap");
 
 :root {
-  --color1: #201e21;
-  --color2: #5F436E;
-  --color4: #dcd7c9;
-  --white: rgb(210, 210, 215);
-  --highlight: #fc466b;
-  --gradient1: #3f5efb;
-  --gradient2: #fc466b;
+  --black: #161616;
+  --color-letter:rgb(31, 1, 53);
+  --color1: #420670;
+  --color2: #8E0CF0;
+  --color3: #950DFC;
+  --white: #FFFFFF;
+  --blue: #0500F8;
   --gradient-angle: 0deg;
   --border: 3px;
   --from: 30deg;
   --distance: 46%;
+  --highlight: #C273FF;
 }
 
 @keyframes rotation {
@@ -27,16 +28,15 @@ html {
   scroll-behavior: smooth;
 }
 
-.highlight {
-  color: var(--highlight) !important;
-}
-
 aside {
   position: fixed;
   top: 0;
   left: 0;
   height: 100vh;
   width: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 #aside-content {
@@ -45,45 +45,36 @@ aside {
   align-items: center;
   position: relative;
   height: 100%;
-  width: 98%;
-  background-color: #201e21;
+  background-color: var(--black);
+  text-align: center;
+  color: var(--white);
+  gap: 20px;
 }
 
 #aside-content::before,
 #aside-content::after {
-  z-index: -100;
   content: "";
   position: absolute;
   inset: 0;
   width: 102%;
-  background: linear-gradient(var(--gradient-angle), var(--gradient1), var(--gradient2));
+  background: linear-gradient(var(--gradient-angle), var(--color3), var(--blue));
   animation: rotation 2s linear infinite;
+  z-index: -1;
 }
 
 #aside-content::after {
   filter: blur(1.5rem);
 }
 
-#profileTitle,
-#profileSubtitle,
-#profileDescription,
-.contactInfo {
-  color: white;
+.highlight {
+  color: var(--highlight) !important;
 }
 
-#profileTitle {
-  margin-top: 20px;
-}
-
-#profileSubtitle {
-  margin-top: -5px;
-}
-
-#profileDescription,
-.contactInfo {
-  margin-top: 20px;
+#dev-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
   width: 80%;
-  text-align: center;
 }
 
 .contactInfo {
@@ -95,7 +86,7 @@ aside {
 
 .contactInfo a {
   text-decoration: none;
-  color: white;
+  color: var(--white);
 }
 
 .contactInfo a:hover {
@@ -105,7 +96,7 @@ aside {
 main {
   background-color: whitesmoke;
   overflow-y: hidden;
-  margin-left: 20%;
+  margin-left: 20.4%;
 }
 
 swiper-slide {
@@ -131,7 +122,7 @@ swiper-slide img:hover {
 
 #mediaLinks {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   width: 80%;
   padding: 20px 0px;
   border-bottom: 2px solid var(--color2);
@@ -139,7 +130,7 @@ swiper-slide img:hover {
 
 #mediaLinks i {
   font-size: 2rem;
-  color: white;
+  color: var(--white);
 }
 
 #mediaLinks a:hover i {
@@ -151,7 +142,7 @@ swiper-slide img:hover {
   width: 90%;
   margin: auto;
   margin-top: 50px;
-  color: var(--color2);
+  color: var(--color-letter);
 }
 
 .aboutDiv h2 {
@@ -160,15 +151,15 @@ swiper-slide img:hover {
 
 .aboutDiv p {
   text-align: justify;
-  color: var(--color1);
+  color: var(--color-letter);
 }
 
 .aboutDiv b {
-  color: var(--color1);
+  color: var(--color-letter);
 }
 
 .aboutDiv label {
-  color: var(--color1);
+  color: var(--color-letter);
 }
 
 .companiesDiv {
@@ -177,7 +168,7 @@ swiper-slide img:hover {
 
 footer {
   text-align: center;
-  color: var(--color1);
+  color: var(--color-letter);
   opacity: 0.3;
   margin-top: 100px;
 }
@@ -243,7 +234,7 @@ footer {
 
 .skillDiv h4 {
   padding-left: 10px;
-  color: var(--color1);
+  color: var(--color-letter);
   font-weight: 500;
   border-left: 8px solid var(--color2);
 }
@@ -255,8 +246,12 @@ footer {
 }
 
 #lngButton-eng {
-  width: 60%;
-  font-size: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  color: white;
+  width: 80%;
   background-color: transparent;
   border: 2px solid var(--color2);
   border-radius: 10px;
@@ -265,7 +260,7 @@ footer {
 }
 
 #lngButton-eng:hover {
-  background-color: #272f31;
+  border-color: var(--highlight);
 }
 
 
@@ -409,7 +404,7 @@ footer {
 }
 
 .nav {
-  color: white;
+  color: var(--white);
   font-size: 5rem;
   position: absolute;
   display: flex;
@@ -429,5 +424,48 @@ footer {
   &.right {
     right: 0;
     transform: translateX(100%) translatey(-50%);
+  }
+}
+
+@media (max-width: 1000px) {
+  .App {
+    display: flex;
+    flex-direction: column;
+  }
+
+  aside {
+    position: unset;
+    height: 50% !important;
+    width: 100%;
+    background-color: var(--black);
+    padding-bottom: 20px;
+  }
+
+  #lngButton-eng {
+    position: unset;
+    bottom: 10px;
+  }
+
+  main {
+    padding: 0px 10px;
+    margin-left: 0%;
+    overflow-x: hidden;
+  }
+
+  .companiesDiv,
+  .projectSection {
+    display: none;
+  }
+
+  #aside-content::before, #aside-content::after {
+    width: 100%;
+  }
+
+  .skillDivIcons {
+    flex-wrap: wrap;
+  }
+
+  footer div {
+    display: none;
   }
 }
