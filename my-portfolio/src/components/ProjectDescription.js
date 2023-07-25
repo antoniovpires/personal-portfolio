@@ -20,7 +20,12 @@ function ProjectDescription(props) {
         background-color: var(--black);
         opacity: 0.2;
         height: 100%;
-        text-align: justify;
+        text-align: left;
+
+            h2 {
+                margin-bottom: var(--margin-half)
+            }
+
         }
 
         &:hover div {

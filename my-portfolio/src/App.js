@@ -1,5 +1,5 @@
 import ProjectDescription from './components/ProjectDescription';
-import TextDiv from './textDiv';
+import TextDiv from './components/TextDiv';
 import SkillDiv from './components/skillDiv';
 import Swiper from './components/Swiper';
 import React from 'react';
@@ -108,7 +108,7 @@ class App extends React.Component {
                 </aside>
                 <main>
                     <TextDiv title={this.state.xpTitle} text={this.state.xpText} />
-                    <section className="companiesDiv fade-bottom">
+                    <section className="companiesDiv">
                         <small id="swiperTitle"></small>
                         <Swiper language={this.state.language} />
                     </section>
@@ -118,7 +118,7 @@ class App extends React.Component {
                         })
                     }
                     <TextDiv title={this.state.aboutMeTitle} text={this.state.aboutMeText} />
-                    <section className="aboutDiv fade-right">
+                    <section id="mySkills">
                         <h2>Skills</h2>
                         <div id="skillsGrid">
                             <SkillDiv title="Front-End" icons={[{ class: 'devicon-react-original colored', name: 'ReactJS' }, { class: 'devicon-vuejs-plain colored', name: 'VueJS' },{ class: 'devicon-jquery-plain-wordmark colored', name: 'jQuery' }, { class: 'devicon-typescript-plain colored', name: 'Typescript' }, { class: 'devicon-bootstrap-plain colored', name: 'Bootstrap' }, { class: 'devicon-sass-original colored', name: 'SASS' }, { class: 'devicon-tailwindcss-plain colored', name: 'Tailwind CSS' }]} />
@@ -136,8 +136,8 @@ class App extends React.Component {
                             </defs>
                             <g className="parallax">
                             <use xlinkHref="#gentle-wave" x="48" y="0" fill="#4206708e" />
-                            <use xlinkHref="#gentle-wave" x="48" y="5" fill="#8E0CF0" />
-                            <use xlinkHref="#gentle-wave" x="48" y="7" fill="#950DFC" />
+                            <use xlinkHref="#gentle-wave" x="48" y="5" fill="#8E0CF08e" />
+                            <use xlinkHref="#gentle-wave" x="48" y="7" fill="#950DFC8e" />
                             </g>
                             </svg>
                         </div>
