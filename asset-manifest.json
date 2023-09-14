@@ -1,23 +1,21 @@
 {
   "files": {
-    "main.css": "/personal-portfolio/static/css/main.58ffada9.css",
-    "main.js": "/personal-portfolio/static/js/main.1553e2e1.js",
+    "main.css": "/personal-portfolio/static/css/main.b73a9c90.css",
+    "main.js": "/personal-portfolio/static/js/main.b5678292.js",
     "static/js/787.128fc6e9.chunk.js": "/personal-portfolio/static/js/787.128fc6e9.chunk.js",
     "static/media/print_personal.PNG": "/personal-portfolio/static/media/print_personal.118d3216a4dada901968.PNG",
     "static/media/foto_perfil.png": "/personal-portfolio/static/media/foto_perfil.619fe2b666d0a7cbcff8.png",
-    "static/media/knn-logo-1.png": "/personal-portfolio/static/media/knn-logo-1.c57febf4e7d0ee15f396.png",
     "static/media/print_app_downlaod.PNG": "/personal-portfolio/static/media/print_app_downlaod.b6c9802dfcfc51376295.PNG",
     "static/media/print_event_lp.PNG": "/personal-portfolio/static/media/print_event_lp.eb8fa760f974f598b64b.PNG",
-    "static/media/Banzai_LOGO-removebg-preview.png": "/personal-portfolio/static/media/Banzai_LOGO-removebg-preview.0f42237e08051ae0c5d4.png",
-    "static/media/logo2.png": "/personal-portfolio/static/media/logo2.e36bb01a6cdccd2a0d85.png",
-    "static/media/LogoCompasso-positivo.png": "/personal-portfolio/static/media/LogoCompasso-positivo.04ecd939b8f5e1009413.png",
+    "static/media/dashboard.PNG": "/personal-portfolio/static/media/dashboard.6818bf7d1964c59a1331.PNG",
+    "static/media/kollect.PNG": "/personal-portfolio/static/media/kollect.56929989590ef2552c7a.PNG",
     "index.html": "/personal-portfolio/index.html",
-    "main.58ffada9.css.map": "/personal-portfolio/static/css/main.58ffada9.css.map",
-    "main.1553e2e1.js.map": "/personal-portfolio/static/js/main.1553e2e1.js.map",
+    "main.b73a9c90.css.map": "/personal-portfolio/static/css/main.b73a9c90.css.map",
+    "main.b5678292.js.map": "/personal-portfolio/static/js/main.b5678292.js.map",
     "787.128fc6e9.chunk.js.map": "/personal-portfolio/static/js/787.128fc6e9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.58ffada9.css",
-    "static/js/main.1553e2e1.js"
+    "static/css/main.b73a9c90.css",
+    "static/js/main.b5678292.js"
   ]
 }
