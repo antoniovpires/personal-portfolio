@@ -54,7 +54,7 @@ function ProjectDescription(props) {
                             return project
                     })}</h2>
                     <p>{props.text}</p>
-                    <a target="_blank" href={props.repo}><i class="devicon-github-original-wordmark"></i></a>
+                    <a target="_blank" rel="noreferrer" href={props.repo}><i className="devicon-github-original-wordmark"></i></a>
                 </div>
             </a>
         </ProjectSection>  

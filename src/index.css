@@ -110,12 +110,12 @@ main {
   border-bottom: 2px solid var(--color2);
 }
 
-#mediaLinks i {
+#mediaLinks ion-icon {
   font-size: 2rem;
   color: var(--white);
 }
 
-#mediaLinks a:hover i {
+#mediaLinks a:hover ion-icon {
   color: var(--highlight) !important;
 }
 

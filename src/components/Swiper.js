@@ -11,11 +11,11 @@ function SwiperProject(props) {
             period: isPtBr ? '5 meses' : '5 months',
             descriptions: isPtBr ? <p><b>Estágio</b> em AWS Cloud Engineering. Estudei as principais tecnologias pertinentes ao trabalho de um engenheiro de dados e realizei diversos projetos na nuvem da AWS.<br></br><br></br>Ao fim do estágio, entreguei um projeto final que consistia em contruir as etapas de extração, transformação e carregamento de dados. Além disso, tive a honra de conquistar o certificado de <b>AWS Cloud Practitioner</b> ao fim do programa.</p> : <p><b>Internship</b> in AWS Cloud Engineering. I have studied the main technologies related to Data Engineering and also developed several projects in the AWS Cloud.<br></br><br></br>At the end of the internship, I delivered a project that consisted in building a data pipeline (extraction, transformation and loading). Also, I have had the honor of achieving the <b>AWS Cloud Practitioner certification</b> by the end of the program.</p>,
             stack: 
-            [<i class="devicon-amazonwebservices-plain-wordmark colored"></i>,
-            <i class="devicon-python-plain colored"></i>,
-            <i class="devicon-docker-plain-wordmark colored"></i>,
-            <i class="devicon-sqlite-plain colored"></i>,
-            <i class="devicon-mysql-plain colored"></i>]
+            [<i className="devicon-amazonwebservices-plain-wordmark colored"></i>,
+            <i className="devicon-python-plain colored"></i>,
+            <i className="devicon-docker-plain-wordmark colored"></i>,
+            <i className="devicon-sqlite-plain colored"></i>,
+            <i className="devicon-mysql-plain colored"></i>]
         },
         {
             title: 'Fullstack Developer',
@@ -25,11 +25,11 @@ function SwiperProject(props) {
             : 
             <p>As a Fullstack Developer, I performed several system maintenances and implemented new features both in the front-end as in the back-end. Since this was my first full-time position as a programmer, I struggled at the beginning to pick up with all the technologies necessary. <br></br><br></br>With a lot of effort and dedication, I have managed to learn all the skills required and became a better professional. I had two great challenges in this position, the first being able to handle multiple different tasks and the second one handling customer support.<br></br><br></br>To manage the first challenge, I studied some "organizational" techniques in order to handle multiple tasks easier, always taking care of my time management and keeping up with the deadlines. For the customer support, I had no problem with talking to people. The real problem was being able to track their problems and find out exactly what they were looking or asking for.</p>,
             stack: 
-            [<i class="devicon-php-plain colored"></i>,
-            <i class="devicon-javascript-plain colored"></i>,
-            <i class="devicon-mysql-plain colored"></i>,
-            <i class="devicon-bootstrap-plain colored"></i>,
-            <i class="devicon-jquery-plain colored"></i>]
+            [<i className="devicon-php-plain colored"></i>,
+            <i className="devicon-javascript-plain colored"></i>,
+            <i className="devicon-mysql-plain colored"></i>,
+            <i className="devicon-bootstrap-plain colored"></i>,
+            <i className="devicon-jquery-plain colored"></i>]
         }
     ]
 
