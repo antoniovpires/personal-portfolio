@@ -10,11 +10,12 @@
   --blue: #0500F8;
   --gradient-angle: 0deg;
   --border: 3px;
-  --from: 30deg;
+  --from: 220deg;
   --distance: 46%;
   --highlight: #C273FF;
   --margin-total: 50px;
   --margin-half: 25px;
+  --margin-quarter: 12.5px;
 }
 
 @keyframes rotation {
@@ -101,27 +102,6 @@ main {
   margin-left: 20.4%;
 }
 
-swiper-slide {
-  display: grid;
-  grid: auto / auto auto auto auto;
-  gap: 10px;
-  align-items: center;
-  height: 130px;
-  justify-items: center;
-}
-
-swiper-slide img {
-  width: 70%;
-  height: inherit;
-  filter: grayscale(1);
-  cursor: pointer;
-}
-
-swiper-slide img:hover {
-  filter: none !important;
-  transition: 0.3s ease-in-out;
-}
-
 #mediaLinks {
   display: flex;
   justify-content: space-around;
@@ -149,12 +129,7 @@ swiper-slide img:hover {
 footer {
   text-align: center;
   color: var(--color-letter);
-  background-color: #ededed;
   padding-top: var(--margin-total)
-}
-
-footer div {
-  background-color: #ededed;
 }
 
 /* MODELOS ANIMAÇÃO */
@@ -226,21 +201,26 @@ footer div {
 .skillDivIcons {
   display: flex;
   gap: 5px;
-  font-size: 45px;
+  font-size: 55px;
 }
 
 #lngButton-eng {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: right;
+  gap: 10px;
   font-size: 18px;
-  color: white;
   width: 80%;
   background-color: transparent;
-  border: 2px solid var(--color2);
+  border: none;
   border-radius: 10px;
   position: absolute;
   bottom: 10px;
+}
+
+#lngButton-eng span {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.322);
 }
 
 #lngButton-eng:hover {
@@ -253,6 +233,7 @@ footer div {
 .img-wrap {
   position: relative;
   padding: 20px;
+  margin-top: 30px;
 }
 .img-wrap::after {
   content: '';
@@ -265,8 +246,8 @@ footer div {
   width: 100%;
   background: conic-gradient(
     from var(--from),
-    var(--gradient2),
-    var(--gradient1) var(--distance),
+    var(--color1),
+    var(--color2) var(--distance),
     transparent var(--distance)
   );
   -webkit-mask: radial-gradient(
@@ -345,8 +326,6 @@ footer div {
 #mySkills {
   padding: 0% 5%;
   margin: auto;
-  background-color: #ededed;
-  padding-top: var(--margin-total)
 }
 
 #mySkills h2 {
@@ -395,4 +374,15 @@ footer div {
   footer div {
     display: none;
   }
+}
+
+#projects-title {
+  width: 90%;
+  margin: auto;
+  margin-top: var(--margin-total);
+  text-align: left;
+  color: var(--color1) !important;
+  margin-bottom: var(--margin-quarter);
+  padding-bottom: var(--margin-quarter);
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
 }

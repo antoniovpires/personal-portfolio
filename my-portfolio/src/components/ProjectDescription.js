@@ -23,7 +23,20 @@ function ProjectDescription(props) {
         text-align: left;
 
             h2 {
-                margin-bottom: var(--margin-half)
+                margin-bottom: var(--margin-half);
+
+                i {
+                    margin-left: 10px;
+                }
+            }
+
+            a {
+                font-size: 40px;
+            }
+
+            .projectTitle {
+                display: flex;
+                align-items: center;
             }
 
         }
@@ -37,8 +50,11 @@ function ProjectDescription(props) {
         <ProjectSection className="projectSection">
             <a href={props.link} target="_blank" rel="noreferrer">
                 <div>
-                    <h2>{props.title}</h2>
+                    <h2>{props.title} {props.stack.map((project) => {
+                            return project
+                    })}</h2>
                     <p>{props.text}</p>
+                    <a target="_blank" href={props.repo}><i class="devicon-github-original-wordmark"></i></a>
                 </div>
             </a>
         </ProjectSection>  

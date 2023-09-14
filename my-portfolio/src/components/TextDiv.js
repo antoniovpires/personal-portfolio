@@ -12,7 +12,9 @@ function TextDiv(props) {
 
         h2 {
             color: var(--color1) !important;
-            margin-bottom: var(--margin-half);
+            margin-bottom: var(--margin-quarter);
+            padding-bottom: var(--margin-quarter);
+            border-bottom: 2px solid rgba(0, 0, 0, 0.1);
         }
 
     ` 
@@ -20,7 +22,7 @@ function TextDiv(props) {
     return (
         <TextSection className="aboutDiv">
             <h2>{props.title}</h2>
-            <p>{props.text}</p>
+            {props.text}
         </TextSection>
     )
 }
